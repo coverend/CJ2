@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.google.gdt.eclipse.designer.util.ui.ImageSelectionDialog">
+		<item value="538" key="height"/>
+		<item value="703" key="width"/>
+		<item value="251" key="y"/>
+		<item value="608" key="x"/>
+	</section>
+	<section name="com.google.gdt.eclipse.designer.model.property.css.StylesEditDialog">
+		<item value="616" key="height"/>
+		<item value="961" key="width"/>
+		<item value="212" key="y"/>
+		<item value="479" key="x"/>
+	</section>
+</section>
