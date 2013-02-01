@@ -11,13 +11,13 @@ public static void main (String[] args)throws Exception
  Class.forName("com.mysql.jdbc.Driver");
  
  //Creating a variable for the connection called "con"
- Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb","dixonj","dixonj" );
+ Connection con = DriverManager.getConnection("jdbc:mysql://www.savianconsultants.com:3306/savianconsultants_com","a0000a6f","newlife2010" );
  //jdbc:mysql://localhost:3306/
  //root is the database user
  //RicSpring13 is password 
  
  //Here we create our query
- PreparedStatement statement = con.prepareStatement(" SELECT * FROM `names`WHERE FIRST = 'John'");
+ PreparedStatement statement = con.prepareStatement(" SELECT * FROM names");
  
  
  //Creating a variable to execute query
