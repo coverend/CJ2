@@ -9,11 +9,11 @@ package loginscreen;
  * @author jroberti
  */
 public class LoginScreenForm extends javax.swing.JFrame {
-
+    Mediator mediator;
     /**
      * Creates new form LoginScreenForm
      */
-    public LoginScreenForm() {
+    public LoginScreenForm(Mediator m) {
         initComponents();
     }
 
@@ -157,10 +157,15 @@ public class LoginScreenForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String username = usrTxt.getText();
-        String password = pasTxt.getText();
+        String userName = username.getText();
+        String passWord = password.getText();
+        if (mediator.verifyLogin(userName, passWord)){
+        // transition to next page
+        }
+        else{//through error message
+        };
         
-        JOPtionPane.showMessageDialog(this, "Inputs: \nUsername:" + username + "\nPassword: " + password);
+        //JOPtionPane.showMessageDialog(this, "Inputs: \nUsername:" + username + "\nPassword: " + password);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameActionPerformed
@@ -201,6 +206,8 @@ public class LoginScreenForm extends javax.swing.JFrame {
             }
         });
     }
+	
+	
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
