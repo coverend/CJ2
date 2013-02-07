@@ -170,3 +170,4 @@ pip-log.txt
 *.war
 *.ear
 >>>>>>> no message
+/JavaApplication40/nbproject/private/
